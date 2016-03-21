@@ -4,12 +4,12 @@ public class Main {
 private static Scanner leia;
 public static void main(String[] args) {
 leia = new Scanner(System.in);
-
+//variaveis
 double a1;
 double a2;
 int a=0;
 boolean proximo = true;
-
+//inicio do bloco de repetição
 while (proximo){
 
 Calculadora calc = new Calculadora("um teste legal");
