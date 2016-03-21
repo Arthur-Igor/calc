@@ -47,7 +47,9 @@ switch(a){
     	}
 System.out.println("deseja repetir? [s|n]");
 String continua = leia.next();
-if(continua.equals("n") || continua.equals("N")){
+if(continua.equals("n") || continua.equals("N"))
+System.out.println("Good bye");
+{
 	proximo = false;
 }
 }
