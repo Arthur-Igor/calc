@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Main {
-
+//class main - barnche-master
 private static Scanner leia;
 public static void main(String[] args) {
 leia = new Scanner(System.in);
@@ -9,7 +9,7 @@ double a1;
 double a2;
 int a=0;
 boolean proximo = true;
-//inicio do bloco de repetição
+//inicio do bloco de repetiÃ§Ã£o
 while (proximo){
 
 Calculadora calc = new Calculadora("um teste legal");
@@ -42,7 +42,7 @@ switch(a){
     	break;
     		
     default:
-    	System.out.println("qr bagunçar?");
+    	System.out.println("qr bagunÃ§ar?");
     	
     	}
 System.out.println("deseja repetir? [s|n]");
