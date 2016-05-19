@@ -40,6 +40,11 @@ switch(a){
     case 4:
     	System.out.println(calc.mutiplicar(a1, a2));	
     	break;
+    case 5:
+	System.out.println(calc.potencia(a1, a2));
+		break;
+    	
+    	
     		
     default:
     	System.out.println("qr bagunçar?");

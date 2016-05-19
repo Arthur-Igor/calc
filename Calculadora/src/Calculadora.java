@@ -21,5 +21,12 @@ public Calculadora (String nome){
 		public double mutiplicar(double v1, double v2){
 			return v1 * v2;
 	}
+		public double potencia(double a1, double a2) {
+			double potencia = 1;
+			for (int i = 0; i < a2; i++) {
+				potencia = potencia * a1;
+			}
+			return potencia;
+		}
 	
 }
