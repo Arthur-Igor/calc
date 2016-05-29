@@ -22,32 +22,45 @@ leia = new Scanner(System.in);
 					+ "1-somar;\n 2-subtrair;\n 3-dividir;\n 4-multiplicar;\n 5-potencia");
 		//menu
 			operacao = leia.nextInt();
-		System.out.println("agr escolhe 1 numero");
-			a1 = leia.nextDouble();
-		System.out.println("agr escolhe 1 numero");
-			a2 = leia.nextDouble();
+//		System.out.println("agr escolhe 1 numero");
+//			a1 = leia.nextDouble();
+//		System.out.println("agr escolhe 1 numero");
+//			a2 = leia.nextDouble();
 		//fimMenu
 			//inicio da seleção dos itens do menu
 			switch(operacao){
     case 1:
+    	a1 = verifica();
+    	a2 = verifica();
     	imprime("soma", calc.somar(a1, a2));
            
             break;
     
     case 2:
+    	a1 = verifica();
+    	a2 = verifica();
 
     	imprime("subtracao", calc.subtrair(a1, a2));
             break;
     
     case 3:
+
+    	a1 = verifica();
+    	a2 = verifica();
     	imprime("divisao", calc.dividir(a1, a2));
             break;
     
     case 4:
+
+    	a1 = verifica();
+    	a2 = verifica();
     	imprime("multiplicacao", calc.mutiplicar(a1, a2));	
     		break;
     
     case 5:
+
+    	a1 = verifica();
+    	a2 = verifica();
     	imprime("potenciacao", calc.potencia(a1, a2));
 			break;
     	
@@ -76,7 +89,7 @@ leia = new Scanner(System.in);
 		//
 	}
 	//Implementaçoa para verificar se o que foi digitado é valido
-	public static double verificaDouble(){
+	public static double verifica(){
 		boolean naoEDouble = true;
 		double valor = 0;
 		while (naoEDouble) {
