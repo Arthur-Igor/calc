@@ -19,17 +19,14 @@ leia = new Scanner(System.in);
 
 
 		System.out.println("Qual operação você quer realizar?\n "
-					+ "1-somar;\n 2-subtrair;\n 3-dividir;\n 4-multiplicar;\n 5-potencia");
-		//menu
+					+ "1-somar;\n 2-subtrair;\n 3-dividir;\n 4-multiplicar;\n 5-potencia;");
+	
 			operacao = leia.nextInt();
-//		System.out.println("agr escolhe 1 numero");
-//			a1 = leia.nextDouble();
-//		System.out.println("agr escolhe 1 numero");
-//			a2 = leia.nextDouble();
-		//fimMenu
+		
 			//inicio da seleção dos itens do menu
 			switch(operacao){
     case 1:
+    	System.out.println("============================================SOMA============================================");
     	a1 = verifica();
     	a2 = verifica();
     	imprime("soma", calc.somar(a1, a2));
@@ -37,6 +34,7 @@ leia = new Scanner(System.in);
             break;
     
     case 2:
+    	System.out.println("============================================SUBTRAÇÃO============================================");
     	a1 = verifica();
     	a2 = verifica();
 
@@ -44,21 +42,21 @@ leia = new Scanner(System.in);
             break;
     
     case 3:
-
+    	System.out.println("============================================DIVISÃO============================================");
     	a1 = verifica();
     	a2 = verifica();
     	imprime("divisao", calc.dividir(a1, a2));
             break;
     
     case 4:
-
+    	System.out.println("============================================MULTIPLICAÇÃO============================================");
     	a1 = verifica();
     	a2 = verifica();
     	imprime("multiplicacao", calc.mutiplicar(a1, a2));	
     		break;
     
     case 5:
-
+    	System.out.println("============================================POTENCIAÇÃO============================================");
     	a1 = verifica();
     	a2 = verifica();
     	imprime("potenciacao", calc.potencia(a1, a2));
