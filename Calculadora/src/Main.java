@@ -61,7 +61,13 @@ leia = new Scanner(System.in);
     	a2 = verifica();
     	imprime("potenciacao", calc.potencia(a1, a2));
 			break;
+    case 6:
+    	System.out.println("============================================VERIFICA SE O NUMERO É PAR============================================");
     	
+		a1 = verifica();
+
+		System.out.println("O resultado de ehPar foi: " + calc.ehPar(a1));
+		break;
     	
     		
     default:

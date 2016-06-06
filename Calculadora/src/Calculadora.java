@@ -27,6 +27,9 @@ public Calculadora (String nome){
 				potencia = potencia * a1;
 			}
 			return potencia;
+	}
+		public boolean ehPar(double valor) {
+			return valor % 2 == 0;
 		}
 	
 }
