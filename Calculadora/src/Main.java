@@ -11,19 +11,19 @@ leia = new Scanner(System.in);
 	double a2;
 	int operacao=0;
 	boolean proximo = true;
-	String nome = "usu·rio";
+	String nome = "usu√°rio";
 //inicio do bloco de repeticao
 	while (proximo == true){
 
 		Calculadora calc = new Calculadora(nome);
 
 
-		System.out.println("Qual operaÁ„o vocÍ quer realizar?\n "
-					+ "1-somar;\n 2-subtrair;\n 3-dividir;\n 4-multiplicar;\n 5-potencia;");
+		System.out.println("Qual opera√ß√£o voc√™ quer realizar?\n "
+					+ "1-soma;\n 2-subtra√ß√£o;\n 3-divis√£o;\n 4-multiplica√ß√£o;\n 5-potencia√ß√£o;");
 	
 			operacao = leia.nextInt();
 		
-			//inicio da seleÁ„o dos itens do menu
+			//inicio da sele√ß√£o dos itens do menu
 			switch(operacao){
     case 1:
     	System.out.println("============================================SOMA============================================");
@@ -34,7 +34,7 @@ leia = new Scanner(System.in);
             break;
     
     case 2:
-    	System.out.println("============================================SUBTRA«√O============================================");
+    	System.out.println("============================================SUBTRA√á√ÉO============================================");
     	a1 = verifica();
     	a2 = verifica();
 
@@ -42,27 +42,27 @@ leia = new Scanner(System.in);
             break;
     
     case 3:
-    	System.out.println("============================================DIVIS√O============================================");
+    	System.out.println("============================================DIVIS√ÉO============================================");
     	a1 = verifica();
     	a2 = verifica();
     	imprime("divisao", calc.dividir(a1, a2));
             break;
     
     case 4:
-    	System.out.println("============================================MULTIPLICA«√O============================================");
+    	System.out.println("============================================MULTIPLICA√á√ÉO============================================");
     	a1 = verifica();
     	a2 = verifica();
     	imprime("multiplicacao", calc.mutiplicar(a1, a2));	
     		break;
     
     case 5:
-    	System.out.println("============================================POTENCIA«√O============================================");
+    	System.out.println("============================================POTENCIA√á√ÉO============================================");
     	a1 = verifica();
     	a2 = verifica();
     	imprime("potenciacao", calc.potencia(a1, a2));
 			break;
     case 6:
-    	System.out.println("============================================VERIFICA SE O NUMERO … PAR============================================");
+    	System.out.println("============================================VERIFICA SE O NUMERO √â PAR============================================");
     	
 		a1 = verifica();
 
@@ -71,7 +71,7 @@ leia = new Scanner(System.in);
     	
     		
     default:
-    	System.out.println("OperaÁ„o inv·lida! Tente novamente!");
+    	System.out.println("Opera√ß√£o inv√°lida! Tente novamente!");
     	
     	}
 			//fimSelecao
@@ -92,7 +92,7 @@ leia = new Scanner(System.in);
 		System.out.println("O resultado da " + nomeOper + " foi: " + resultado);
 		//
 	}
-	//ImplementaÁoa para verificar se o que foi digitado È valido
+	//Implementa√ßoa para verificar se o que foi digitado √© valido
 	public static double verifica(){
 		boolean naoEDouble = true;
 		double valor = 0;
@@ -103,7 +103,7 @@ leia = new Scanner(System.in);
 				valor = leitor.nextDouble();
 				naoEDouble = false;
 			} catch (Exception e) {
-				System.out.println("Os dados digitados nao s„o v·lidos!");
+				System.out.println("Os dados digitados nao s√£o v√°lidos!");
 			}
 		}
 		return valor;
